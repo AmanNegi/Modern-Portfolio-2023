@@ -1,0 +1,22 @@
+.absolute-center {
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.animatedDiv {
+  @apply bg-semiDarkBackground border-headingColor border-opacity-50 border-[1px] w-[10vw] h-[30vh] flex items-center justify-center;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+}
+
+.animatedText {
+  @apply text-5xl text-center text-accentColor font-bold;
+}
+
+.gradientText {
+  @apply text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-white via-accentColor to-accentColor;
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("./assets/grotesk_bold.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("./assets/grotesk_semibold.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("./assets/grotesk_regular.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Grotesk";
+  src: url("./assets/grotesk_light.otf");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Grotesk";
+  src: url("./assets/grotesk_thin.otf");
+  font-weight: 100;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  /* font-family: "Grotesk"; */
+  /* font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif; */
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+}
+
+.cards {
+  @apply bg-semiDarkBackground border-headingColor;
+}
