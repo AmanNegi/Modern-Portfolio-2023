@@ -6,7 +6,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     fontFamily: {
-      grotesk: ["Grotesk", "Montserrat"]
+      grotesk: ["Grotesk", "Montserrat"],
     },
     extend: {
       colors: {
@@ -17,6 +17,8 @@ export default {
         accentColor: "#cd505a",
         headingColor: "#444346",
         paragraphColor: "#000000",
+        borderColor: "#faefeb",
+        dividerColor: "#f7e4dd",
       },
     },
   },

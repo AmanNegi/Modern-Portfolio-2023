@@ -46,11 +46,21 @@ html {
   /* font-family: "Grotesk"; */
   /* font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif; */
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+}
+button {
+  display: block;
+  @apply bg-accentColor text-white;
 }
 
 .absolute-center {

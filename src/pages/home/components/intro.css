@@ -1,15 +1,22 @@
-.absolute-center {
+/* Center Rect*/
+.animatedDiv {
+  @apply bg-semiDarkBackground border-headingColor border-opacity-50
+   border-[1px] w-[15vw] md:w-[10vw] h-[20vh] md:h-[40vh] flex items-center justify-center 
+  shadow-white shadow-2xl;
+  @apply top-[25%] left-[45%];
+
   position: absolute;
-  top: 30%;
-  left: 47%;
   transform: translate(-50%, -50%);
 }
 
-.animatedDiv {
-  @apply bg-semiDarkBackground border-headingColor border-opacity-50 border-[1px] w-[10vw] h-[30vh] flex items-center justify-center;
+/* The Four surrounding Rect */
+.transparentAnimatedDiv {
+  @apply bg-transparent border-headingColor 
+   border-[1px] w-[15vw] md:w-[10vw] h-[20vh] md:h-[40vh] flex items-center justify-center 
+  shadow-white shadow-2xl;
+  @apply top-[25%] left-[45%];
+
   position: absolute;
-  top: 30%;
-  left: 45%;
   transform: translate(-50%, -50%);
 }
 
