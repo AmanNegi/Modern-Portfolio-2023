@@ -1,9 +1,18 @@
-import React from "react";
 import { SiTwitter, SiLinkedin, SiYoutube, SiGithub } from "react-icons/si";
+
+import cute_animal from "../assets/cute_animal.png";
+
 const Footer = () => {
   return (
-    <footer className="bg-white h-[20vh] w-[100%] ">
+    <footer className="bg-white w-[100%] py-10">
       <div className="h-[100%] flex flex-col items-center justify-evenly">
+        <img
+          className="object-cover"
+          height={100}
+          width={200}
+          src={cute_animal}
+          alt=""
+        />
         <h1 className=" text-2xl md:text-3xl font-bold ">{`Let's connect :)`}</h1>
         <div className="flex gap-8">
           <i

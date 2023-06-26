@@ -73,3 +73,7 @@ button {
 .cards {
   @apply bg-semiDarkBackground border-headingColor;
 }
+
+.wrapper{
+  @apply p-10 h-[100vh] bg-accentColor;
+}

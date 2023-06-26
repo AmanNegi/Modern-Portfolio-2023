@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { isDesktop, isMobile, isTablet } from "../../../utils/screen_size";
 
 function About() {
   return (
