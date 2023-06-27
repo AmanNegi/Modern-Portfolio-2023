@@ -4,16 +4,14 @@ import cute_animal from "../assets/cute_animal.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-white w-[100%] py-10">
+    <footer className="bg-white w-[100%] py-10 border-t-2 border-t-semiDarkBackground md:mt-[8vh]">
       <div className="h-[100%] flex flex-col items-center justify-evenly">
         <img
-          className="object-cover"
-          height={100}
-          width={200}
+          className="object-contain h-[100px] w-[100px] mb-8"
           src={cute_animal}
           alt=""
         />
-        <h1 className=" text-2xl md:text-3xl font-bold ">{`Let's connect :)`}</h1>
+        <h1 className=" text-2xl md:text-3xl font-bold mb-4 hover:text-accentColor">{`Let's connect :)`}</h1>
         <div className="flex gap-8">
           <i
             onClick={() => {
