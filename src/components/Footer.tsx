@@ -1,4 +1,3 @@
-import React from "react";
 import { SiTwitter, SiLinkedin, SiYoutube, SiGithub } from "react-icons/si";
 const Footer = () => {
   return (

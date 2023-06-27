@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import { isDesktop, isMobile, isTablet } from "../../../utils/screen_size";
 
 function About() {
+  const isMobile = window.innerWidth < 992;
   return (
     <section className="h-screen w-[100%] bg-gradient-to-r from-darkBackground to-semiDarkBackground relative">
       <div className="h-[100%] w-[100%] flex flex-col items-start justify-center gap-10 pl-[5vw] md:pl-[15vw]  font-grotesk font-normal">
@@ -9,7 +9,7 @@ function About() {
           viewport={{ once: true }}
           initial={{
             opacity: 0,
-            x: -500,
+            x: isMobile ? 0 : -500,
           }}
           whileInView={{
             opacity: 1,
@@ -26,7 +26,7 @@ function About() {
           viewport={{ once: true }}
           initial={{
             opacity: 0,
-            x: 500,
+            x: isMobile ? 0 : 500,
           }}
           whileInView={{
             opacity: 1,
@@ -44,7 +44,7 @@ function About() {
           viewport={{ once: true }}
           initial={{
             opacity: 0,
-            x: -500,
+            x: isMobile ? 0 : -500,
           }}
           whileInView={{
             opacity: 1,
@@ -90,7 +90,7 @@ function About() {
         }}
         className="absolute bottom-2 left-[15vw] font-grotesk text-sm font-medium text-headingColor text-opacity-50"
       >
-        CHECK OUT MY PROJECTS BELOW
+        CHECK OUT MY PROJECTS BELOW 👇
       </motion.p>
     </section>
   );

@@ -9,7 +9,6 @@ function App() {
       <Intro />
       <About />
       <Projects />
-      <div className="h-[20vh] bg-semiDarkBackground"></div>
       <Footer />
     </>
   );
