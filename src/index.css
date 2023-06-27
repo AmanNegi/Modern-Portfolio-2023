@@ -41,23 +41,20 @@
 }
 
 html {
-  height: 100%;
-  width: 100%;
-  /* font-family: "Grotesk"; */
-  /* font-family: "Hanken Grotesk", Arial, Helvetica, sans-serif; */
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
-body {
+html,
+body,
+#root {
   height: 100%;
   width: 100%;
+  margin: 0;
+  padding: 0;
+  /* Prevents overflow on the x-axis */
   overflow-x: hidden;
 }
 
-#root {
-  overflow-x: hidden;
-}
 button {
   display: block;
   @apply bg-accentColor text-white;
