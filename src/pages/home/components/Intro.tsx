@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import "./intro.css";
 import { isMobile } from "../../../utils/screen_size";
 
+// OUTDATED: This component is not used anymore
+
 function Intro() {
   // const text = "ASTER";
 
@@ -18,7 +20,7 @@ function Intro() {
         animate={{ opacity: 1, transition: { delay: 3.5, duration: 3 } }}
         className="absolute top-[35%] md:top-[40%]  right-[0] left-[30vw] z-10 tracking-[5.75vw]"
       >
-        <h1 className=" text-2xl md:text-7xl font-black text-transparent bg-clip-text bg-gradient-to-b from-headingColor via-accentColor to-accentColor">
+        <h1 className="text-2xl font-black text-transparent  md:text-7xl bg-clip-text bg-gradient-to-b from-headingColor via-accentColor to-accentColor">
           ASTER
         </h1>
       </motion.div>
@@ -27,7 +29,7 @@ function Intro() {
         animate={{ opacity: 1, transition: { delay: 3.5, duration: 3 } }}
         className="absolute top-[80%] left-[0] right-[0] text-center md:right-[0] z-10"
       >
-        <h1 className="text-lg md:text-2xl font-grotesk font-extralight text-headingColor  text-opacity-75">
+        <h1 className="text-lg text-opacity-75 md:text-2xl font-extralight text-headingColor">
           Flutter & Web Developer
         </h1>
       </motion.div>

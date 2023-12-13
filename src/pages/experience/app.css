@@ -1,0 +1,71 @@
+/* Similar to tailwind config.js */
+:root {
+  --accent-color: #3AAFA9;
+  --secondary-color: #f9c74f;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+}
+
+.title {
+  font-size: 15em;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+h3 {
+  padding-top: 0.25em;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
+}
+
+.date {
+  color: white !important;
+}
+
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: "#22333b" !important;
+}
+
+.newButton {
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+}
+
+.newButton:hover {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.oldButton {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+  color: black;
+}
+
+.oldButton:hover {
+  background-color: var(--secondary-color);
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
+  }
+}

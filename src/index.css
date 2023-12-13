@@ -1,38 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-/* @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@font-face {
-  font-family: "Grotesk";
-  src: url("./assets/grotesk_bold.otf");
-  font-weight: 800;
-}
-
-@font-face {
-  font-family: "Grotesk";
-  src: url("./assets/grotesk_semibold.otf");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Grotesk";
-  src: url("./assets/grotesk_regular.otf");
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Grotesk";
-  src: url("./assets/grotesk_light.otf");
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "Grotesk";
-  src: url("./assets/grotesk_thin.otf");
-  font-weight: 100;
-}
 
 * {
   padding: 0;
@@ -42,6 +12,7 @@
 
 html {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  @apply bg-bgColor text-headingColor;
 }
 
 html,
@@ -59,6 +30,19 @@ button {
   display: block;
   @apply bg-accentColor text-white;
 }
+p {
+  @apply text-sm lg:text-lg;
+}
+h3 {
+  @apply text-headingColor text-sm lg:text-lg;
+}
+h1,
+.heading {
+  @apply text-headingColor text-2xl md:text-4xl lg:text-6xl font-bold;
+}
+.typeWriterHeading {
+  @apply text-flowTextColor text-2xl md:text-4xl lg:text-6xl font-extrabold;
+}
 
 .absolute-center {
   position: absolute;
@@ -71,6 +55,10 @@ button {
   @apply bg-semiDarkBackground border-headingColor;
 }
 
-.wrapper{
+.wrapper {
   @apply p-10 h-[100vh] bg-accentColor;
+}
+
+.buttonShadow {
+  box-shadow: -3px 3px 0px rgb(255, 255, 255);
 }

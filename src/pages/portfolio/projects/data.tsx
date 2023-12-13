@@ -1,17 +1,17 @@
 import { Project } from "./Projects";
 
-import copyableImage from "../../assets/copyable_banner.png";
-import freshNestBanner from "../../assets/fresh_nest_banner.png";
-import flutterUiKitBanner from "../../assets/flutter_ui_kit_banner.png";
-import selfRemedyBanner from "../../assets/self_remedy_banner.png";
-import localVendorBanner from "../../assets/local_vendor_banner.png";
-import trimTimeBanner from "../../assets/trim_time_banner.png";
+import copyableImage from "../../../assets/copyable_banner.png";
+import freshNestBanner from "../../../assets/fresh_nest_banner.png";
+import flutterUiKitBanner from "../../../assets/flutter_ui_kit_banner.png";
+import selfRemedyBanner from "../../../assets/self_remedy_banner.png";
+import localVendorBanner from "../../../assets/local_vendor_banner.png";
+import trimTimeBanner from "../../../assets/trim_time_banner.png";
 
 const projectList: Array<Project> = [
   {
     name: "FreshNest",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
+      <p>
         A full stack app bridging local vegetable sellers, farmers, and
         consumers. It's a convenient, transparent marketplace connecting
         customers with fresh, locally grown vegetables. No
@@ -20,16 +20,16 @@ const projectList: Array<Project> = [
       </p>
     ),
     tags: ["Node.js", "React", "Flutter", "MongoDB"],
-    url: "https://farm-nest.netlify.app",
+    url: "https://fresh-nest.netlify.app",
     display: freshNestBanner,
     displayType: 0,
   },
   {
     name: "Copyable",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
-        A web and mobile application build using{" "}
-        <span className="font-regular font-grotesk">Flutter</span>, that can be
+      <p>
+        A web and mobile application build using 
+        <span className="font-regular">Flutter</span>, that can be
         used to save some text and instantly get it when needed. This app is
         build for content creators, developers, designers and many more people
         who come across writing the same things again and again.
@@ -43,7 +43,7 @@ const projectList: Array<Project> = [
   {
     name: "Mystic Melodies",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
+      <p>
         Mystic Melodies, is a music streaming app that lets you explore the rich
         and diverse traditional sounds of India. It contains a list of regions
         and their traditional songs, which we can listen to through the app
@@ -60,10 +60,10 @@ const projectList: Array<Project> = [
   {
     name: "TrimTime",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
+      <p>
         Introducing TrimTime, developed by myself and
         <a
-          className="font-bold text-accentColor"
+          className="font-bold text-accentShade"
           href="https://twitter.com/NabhagMotivaras"
         >
           {" "}
@@ -83,7 +83,7 @@ const projectList: Array<Project> = [
   {
     name: "Co-Ride",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
+      <p>
         Co-Ride is an application that connects people traveling in the same
         direction, reducing single-occupancy vehicles, air pollution, fuel
         consumption, and carbon emissions. Share rides, save money, reduce
@@ -103,7 +103,7 @@ const projectList: Array<Project> = [
   {
     name: "Flutter UI Kit",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
+      <p>
         A robust collection of 20+ demo screens. Each screen is meticulously
         documented and refactored for optimal performance. You can find the
         complete source code for each page in the repository, making it easy to
@@ -120,7 +120,7 @@ const projectList: Array<Project> = [
   {
     name: "Local Vendor App",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
+      <p>
         Empowering local vendors and customers. A cost-effective solution for
         vendors to create their own apps. Admins manage items, provide chat
         support, and send push notifications. Users browse, order, book tables,
@@ -137,7 +137,7 @@ const projectList: Array<Project> = [
   {
     name: "Self Remedy",
     description: (
-      <p className="max-h-[50%] text-ellipsis overflow-hidden">
+      <p>
         An educational and collaborative app inspired by Wikipedia and
         open-source projects. It provides information about diseases, allowing
         users to learn and contribute. Users can add or edit disease details,

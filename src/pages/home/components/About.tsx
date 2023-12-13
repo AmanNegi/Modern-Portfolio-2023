@@ -1,10 +1,12 @@
 import { motion } from "framer-motion";
 
+// NOTE: This component is not used anymore
+
 function About() {
   const isMobile = window.innerWidth < 992;
   return (
     <section className="h-screen w-[100%] bg-gradient-to-r from-darkBackground to-semiDarkBackground relative">
-      <div className="h-[100%] w-[100%] flex flex-col items-start justify-center gap-10 pl-[5vw] md:pl-[15vw]  font-grotesk font-normal">
+      <div className="h-[100%] w-[100%] flex flex-col items-start justify-center gap-10 pl-[5vw] md:pl-[15vw] font-normal">
         <motion.h1
           viewport={{ once: true }}
           initial={{
@@ -88,7 +90,7 @@ function About() {
             duration: 1,
           },
         }}
-        className="absolute bottom-2 left-[15vw] font-grotesk text-sm font-medium text-headingColor text-opacity-50"
+        className="absolute bottom-2 left-[15vw] text-sm font-medium text-headingColor text-opacity-50"
       >
         CHECK OUT MY PROJECTS BELOW 👇
       </motion.p>
