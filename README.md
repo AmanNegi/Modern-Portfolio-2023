@@ -1,5 +1,8 @@
 # Modern Portfolio 2023
 
+![](./screenshots/1.png)
+
+[![Visit my website](https://img.shields.io/badge/Visit-Website-green)](https://asterjoules.netlify.app)
 ![TailwindCSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
 ![React](https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
@@ -40,3 +43,8 @@ Contributions are welcome! Please read the [contributing guide](CONTRIBUTING.md)
 ## License
 
 This project is licensed under the terms of the [CC BY-NC-SA 4.0 DEED](LICENSE).
+
+<p float="left">
+  <img src="./screenshots/2.png" width="45%" />
+  <img src="./screenshots/3.png" width="45%" /> 
+</p>
