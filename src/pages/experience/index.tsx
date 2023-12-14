@@ -43,6 +43,7 @@ function Experience() {
               dateClassName="date"
               contentStyle={{
                 backgroundColor: "#DEF2F1",
+                padding: 0,
               }}
               contentArrowStyle={{
                 borderRightColor: "#DEF2F1",

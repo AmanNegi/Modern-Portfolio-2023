@@ -54,19 +54,19 @@ function ProjectItem({ project, index }: ProjectItemProps) {
           {project.displayType === 0 ? (
             <img
               className={twMerge(
-                "object-cover h-[100%] w-[100%]",
+                "object-cover md:h-[100%] w-[100%] h-[50vh] ",
                 index % 2 == 0
                   ? "md:rounded-tr-lg md:rounded-br-lg"
                   : "md:rounded-bl-lg md:rounded-tl-lg"
               )}
               src={project.display}
               loading="lazy"
-              alt=""
+              alt={`Aman Negi's Project ${project.name}`}
             />
           ) : (
             <iframe
               className={twMerge(
-                "object-cover h-full w-[100%]",
+                "object-cover md:h-full w-[100%] h-[50vh]",
                 index % 2 == 0
                   ? "md:rounded-tr-lg md:rounded-br-lg"
                   : "md:rounded-bl-lg md:rounded-tl-lg"

@@ -46,6 +46,7 @@ export default {
         iconsColor: "#17252A",
         dividerColor: "#17252A",
         descriptionTextColor: "#17252A",
+        buttonTextColor: "#FEFFFF",
       },
     },
   },
