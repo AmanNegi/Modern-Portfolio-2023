@@ -24,7 +24,7 @@ function ProjectItem({ project, index }: ProjectItemProps) {
             {project.name}
           </h1>
           <div className="flex-grow">
-            <p className="text-darkShade">{project.description}</p>
+            <div className="text-darkShade">{project.description}</div>
           </div>
           <div className="flex flex-wrap gap-4 mt-3">
             {project.tags.map((e, i) => {
@@ -54,7 +54,7 @@ function ProjectItem({ project, index }: ProjectItemProps) {
           {project.displayType === 0 ? (
             <img
               className={twMerge(
-                "object-cover md:h-[100%] w-[100%] h-[50vh] ",
+                "object-cover md:h-[100%] w-[100%] h-[50%] ",
                 index % 2 == 0
                   ? "md:rounded-tr-lg md:rounded-br-lg"
                   : "md:rounded-bl-lg md:rounded-tl-lg"

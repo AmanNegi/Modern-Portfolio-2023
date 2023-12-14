@@ -1,15 +1,20 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Footer from "../../components/Footer";
 import SideMenu from "../../components/SideMenu";
 import Projects from "./projects/Projects";
 
 const Portfolio = () => {
+  const portfolioRef = useRef<HTMLElement | null>(null);
+
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Scroll to the top of the page
+    if (portfolioRef.current) {
+      portfolioRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   }, []);
 
   return (
-    <>
+    <section ref={portfolioRef}>
       <SideMenu />
       <main className="bg-semiLightShade md:bg-bgColor">
         <div className="px-20 mb-10 text-center pt-14">
@@ -22,7 +27,7 @@ const Portfolio = () => {
         <div className="md:h-[10vh]"></div>
         <Footer />
       </main>
-    </>
+    </section>
   );
 };
 

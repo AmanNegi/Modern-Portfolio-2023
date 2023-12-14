@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -18,60 +18,66 @@ import "react-vertical-timeline-component/style.min.css";
 function Experience() {
   const newIconStyle = { background: "#2B7A78", color: "#fff" };
   const oldIconStyle = { background: "#f9c74f", color: "#000" };
+  const experienceRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // Scroll to the top of the page
+    if (experienceRef.current) {
+      experienceRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   }, []);
 
   return (
     <>
-      <SideMenu />
-      <div className="px-20 text-center pt-14 mb-14">
-        <h1 className="text-3xl font-bold text-center underline md:text-5xl underline-offset-8 decoration-headingColor text-headingColor">
-          Experience
-        </h1>
-      </div>
+      <main ref={experienceRef}>
+        <SideMenu />
+        <div className="px-20 text-center pt-14 mb-14">
+          <h1 className="text-3xl font-bold text-center underline md:text-5xl underline-offset-8 decoration-headingColor text-headingColor">
+            Experience
+          </h1>
+        </div>
 
-      <VerticalTimeline>
-        {timelineElements.map((element) => {
-          const isWorkIcon = element.icon === "work";
-          return (
-            <VerticalTimelineElement
-              key={element.id}
-              date={element.date}
-              textClassName="text-white"
-              dateClassName="date"
-              contentStyle={{
-                backgroundColor: "#DEF2F1",
-                padding: 0,
-              }}
-              contentArrowStyle={{
-                borderRightColor: "#DEF2F1",
-              }}
-              iconStyle={isWorkIcon ? newIconStyle : oldIconStyle}
-              icon={getIconById(element.id)}
-            >
-              <h3 className="text-xl font-bold text-darkShade">
-                {element.title}
-              </h3>
-              <h5 className="text-darkShade text-opacity-80">
-                {element.location}
-              </h5>
-              <p className="text-darkShade" id="description">
-                {element.description}
-              </p>
-
-              <a
-                className={`button ${isWorkIcon ? "newButton" : "oldButton"}`}
-                target="_blank"
-                href={element.url}
+        <VerticalTimeline>
+          {timelineElements.map((element) => {
+            const isWorkIcon = element.icon === "work";
+            return (
+              <VerticalTimelineElement
+                key={element.id}
+                date={element.date}
+                textClassName="text-white"
+                dateClassName="date"
+                contentStyle={{
+                  backgroundColor: "#DEF2F1",
+                  padding: 0,
+                }}
+                contentArrowStyle={{
+                  borderRightColor: "#DEF2F1",
+                }}
+                iconStyle={isWorkIcon ? newIconStyle : oldIconStyle}
+                icon={getIconById(element.id)}
               >
-                {element.buttonText}
-              </a>
-            </VerticalTimelineElement>
-          );
-        })}
-      </VerticalTimeline>
+                <h3 className="text-xl font-bold text-darkShade">
+                  {element.title}
+                </h3>
+                <h5 className="text-darkShade text-opacity-80">
+                  {element.location}
+                </h5>
+                <p className="text-darkShade" id="description">
+                  {element.description}
+                </p>
+
+                <a
+                  className={`button ${isWorkIcon ? "newButton" : "oldButton"}`}
+                  target="_blank"
+                  href={element.url}
+                >
+                  {element.buttonText}
+                </a>
+              </VerticalTimelineElement>
+            );
+          })}
+        </VerticalTimeline>
+      </main>
     </>
   );
 }
