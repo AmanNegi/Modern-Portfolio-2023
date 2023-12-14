@@ -1,4 +1,4 @@
-# Modern Portfolio 2023
+# Modern Portfolio 2023 🧱🌄
 
 ![](./screenshots/1.png)
 
@@ -27,13 +27,13 @@ Modern Portfolio 2023 is a best-practices-oriented React application built with 
 
 1. Clone the repository:
    ```
-       git clone https://github.com/yourusername/modern-portfolio-2023.git
+   git clone https://github.com/yourusername/modern-portfolio-2023.git
    ```
 2. Install the dependencies and run the server:
    ```
-       cd modern-portfolio-2023
-       npm install
-       npm run dev
+   cd modern-portfolio-2023
+   npm install
+   npm run dev
    ```
 
 ## Contributing
@@ -44,7 +44,8 @@ Contributions are welcome! Please read the [contributing guide](CONTRIBUTING.md)
 
 This project is licensed under the terms of the [CC BY-NC-SA 4.0 DEED](LICENSE).
 
+## Screenshots
 <p float="left">
-  <img src="./screenshots/2.png" width="45%" />
-  <img src="./screenshots/3.png" width="45%" /> 
+  <img src="./screenshots/2.png" width="48%" />
+  <img src="./screenshots/3.png" width="48%" /> 
 </p>
